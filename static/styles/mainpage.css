@@ -1,0 +1,20 @@
+
+html, body, .container
+{
+    height: 100%; 
+    min-height: 100%;
+}
+
+.block {
+    float: left;
+    width: 180px;
+    height: 170px;
+    text-align: center;
+}
+
+.selector {
+    float: left;
+    width: 10%;
+    margin-right: 90%;
+    height: 30px;
+}

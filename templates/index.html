@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+<head>
+    <title>Users</title>
+</head>
+<body>
+    <select id="selector" class="selector">
+        <option value="name">Names</option>
+        <option value="age">Ages</option>
+    </select>
+    
+    {% for user in users %}
+        <div class="block">
+            <p>Name: {{user.name}} Age: {{user.age}}</p>
+            <p>{{user.description}}</p>
+            <img src="{{ user.image }}"/>
+        </div>
+    {% endfor %}
+</body>
+</html>
