@@ -12,6 +12,11 @@ html, body, .container
     text-align: center;
 }
 
+.image {
+    width: 120px;
+    height: 80px;  
+}
+
 .selector {
     float: left;
     width: 10%;
